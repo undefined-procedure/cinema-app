@@ -28,7 +28,7 @@ const Slideshow = (props) => {
                 clearInterval(sliderInterval);
             }
         }
-    }, []);
+    }, ['auto', 'autoMoveSlide', 'sliderInterval']);
 
     const autoMoveSlide = () => {
         let lastIndex = 0;
