@@ -28,8 +28,10 @@ const Slideshow = (props) => {
                 clearInterval(sliderInterval);
             }
         }
-    }, ['auto', 'autoMoveSlide', 'sliderInterval']);
+    // eslint-disable-next-line no-use-before-define
+    }, [auto, autoMoveSlide, sliderInterval]);
 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     const autoMoveSlide = () => {
         let lastIndex = 0;
         lastIndex = currentSlideIndex + 1;
