@@ -54,22 +54,12 @@ const Header = () => {
           <div className="header-image">
             <img src={logo} alt="" />
           </div>
-          <div
-            className={`${
-              menuClass ? 'header-menu-toggle is-active' : 'header-menu-toggle'
-            }`}
-            id="header-mobile-menu"
-            onClick={() => toggleMenu()}
-          >
+          <div className={`${menuClass ? 'header-menu-toggle is-active' : 'header-menu-toggle'}`} id="header-mobile-menu" onClick={() => toggleMenu()}>
             <span className="bar"></span>
             <span className="bar"></span>
             <span className="bar"></span>
           </div>
-          <ul
-            className={`${
-              navClass ? 'header-nav header-mobile-nav' : 'header-nav'
-            }`}
-          >
+          <ul className={`${navClass ? 'header-nav header-mobile-nav' : 'header-nav'}`}>
             {HEADER_LIST.map((data) => (
               <li key={data.id} className="header-nav-item">
                 <span>
@@ -81,11 +71,7 @@ const Header = () => {
             ))}
             <li className="header-nav-item">Now Playing</li>
             <li className="header-nav-item">New Movies</li>
-            <input
-              className="search-input"
-              type="text"
-              placeholder="Search for a movie"
-            />
+            <input className="search-input" type="text" placeholder="Search for a movie" />
           </ul>
         </div>
       </div>
