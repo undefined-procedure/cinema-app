@@ -28,7 +28,7 @@ const Slideshow = (props) => {
         clearInterval(sliderInterval);
       };
     }
-    // eslint-disable-next-line no-use-before-define
+    // eslint-disable-next-line
   }, []);
 
   const autoMoveSlide = () => {
